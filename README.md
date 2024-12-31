@@ -3,6 +3,17 @@
 
 
 ## Bot
+
+Vamos fazer uma consulta na classe responsável pela seção de seguindo (following) do perfil do Instagram:
+
+```javascript
+// Classe responsável pela seção de seguindo do perfil do Instagram
+let seguindo = parseInt(document.getElementsByClassName('x5n08af x1s688f')[0]?.innerHTML || 0) // [2].innerHTML 
+// seguindo[2] = divs HTML dessas classes
+```
+
+Após, todos esses estudos, criei o código da nossa aplicação final:
+
 ```javascript
 let listaSeguidos = [];
 
