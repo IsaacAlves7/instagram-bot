@@ -35,7 +35,7 @@ const rolarPagina = setInterval(() => {
 }, 3000);
 ```
 
-## RPA
+## RPA - Robot Process Automation
 
 ```python
 import pyautogui
