@@ -45,6 +45,7 @@ const rolarPagina = setInterval(() => {
 ```
 
 ## RPA - Robot Process Automation
+O RPA cuidará de toda a tarefa braçal de excluir as pessoas que você está seguindo, ele simulará o clique no mouse baseado em coordenadas.
 
 ```python
 import pyautogui
