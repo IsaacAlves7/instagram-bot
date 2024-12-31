@@ -1,5 +1,5 @@
 # instagram-bot
-🤖🦾📸 Esse é um projeto realizado totalmente no front-end, no lado do cliente, é uma maneira automatizada de excluir o número de seguindos (following) do Instagram.
+🤖🦾📸 Esse é um simples projeto realizado totalmente no front-end, no lado do cliente, é uma maneira automatizada de excluir o número de seguindos (following) do Instagram utilizando Vanilla JavaScript e Python.
 
 ## Bot
 Vamos fazer uma consulta na classe responsável pela seção de seguindo (following) do perfil do Instagram:
