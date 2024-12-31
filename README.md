@@ -1,5 +1,5 @@
 # instagram-bot
-🤖🦾📸 Instagram bot from scratch.
+🤖🦾📸 Uma maneira automatizada de excluir o número de seguindos do Instagram.
 
 
 ## Bot
