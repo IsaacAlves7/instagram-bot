@@ -40,6 +40,7 @@ const rolarPagina = setInterval(() => {
 ```python
 import pyautogui
 import time
+import webbrowser
 
 # Lista de usernames a serem deixados de seguir
 usuarios_a_remover = ["usuario1", "usuario2", "usuario3"]
@@ -47,16 +48,19 @@ usuarios_a_remover = ["usuario1", "usuario2", "usuario3"]
 # Configurações de tempo (ajuste conforme necessário)
 TEMPO_ENTRE_ACOES = 2  # Tempo entre ações para evitar erros
 
-# Abrir navegador e acessar Instagram manualmente antes de executar o script
-print("Certifique-se de que o Instagram está aberto e no perfil correto.")
+# URL da página de "seguindo"
+username = "SEU_USERNAME"  # Substitua pelo seu username
+url_following = f"https://www.instagram.com/{username}/following/"
 
-time.sleep(5)  # Tempo para ajustar o navegador
+# Abrir navegador na página de "seguindo"
+webbrowser.open(url_following)
+time.sleep(5)  # Tempo para o navegador carregar a página
 
-# Navega pela lista de usuários e realiza as ações
+# Acessar a barra de busca e iterar pelos usuários
 for usuario in usuarios_a_remover:
     try:
         # Clique na barra de busca na lista de "seguindo" (ajuste as coordenadas para sua tela)
-        pyautogui.click(x=100, y=200)  # Coordenadas do campo de busca
+        pyautogui.click(x=500, y=250)  # Coordenadas do campo de busca
         time.sleep(TEMPO_ENTRE_ACOES)
 
         # Digitar o nome do usuário
@@ -64,11 +68,11 @@ for usuario in usuarios_a_remover:
         time.sleep(TEMPO_ENTRE_ACOES)
 
         # Localizar e clicar no botão "Seguindo" ao lado do nome (ajuste as coordenadas)
-        pyautogui.click(x=150, y=300)  # Coordenadas do botão "Seguindo"
+        pyautogui.click(x=600, y=300)  # Coordenadas do botão "Seguindo"
         time.sleep(TEMPO_ENTRE_ACOES)
 
         # Confirmar "Deixar de seguir"
-        pyautogui.click(x=200, y=350)  # Coordenadas do botão de confirmação
+        pyautogui.click(x=650, y=400)  # Coordenadas do botão de confirmação
         time.sleep(TEMPO_ENTRE_ACOES)
 
         print(f"Deixou de seguir {usuario}.")
